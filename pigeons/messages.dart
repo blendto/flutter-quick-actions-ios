@@ -16,6 +16,7 @@ class ShortcutItemMessage {
     this.type,
     this.localizedTitle,
     this.icon,
+    this.localizedSubtitle,
   );
 
   /// The identifier of this item; should be unique within the app.
@@ -28,7 +29,7 @@ class ShortcutItemMessage {
   String? icon;
 
   /// Localized subtitle of the item.
-  String? subtitle;
+  String? localizedSubtitle;
 }
 
 @HostApi()
