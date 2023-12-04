@@ -213,10 +213,11 @@ packages:
   quick_actions_platform_interface:
     dependency: "direct main"
     description:
-      name: quick_actions_platform_interface
-      sha256: d2a8566b56eec49f93934528b62033906199c60f4ffaef0cba9ef02fcfed8a81
-      url: "https://pub.dev"
-    source: hosted
+      path: "."
+      ref: main
+      resolved-ref: "176c3041e4d568e30da0fa25a6a5266074b07c3c"
+      url: "https://github.com/blendto/flutter-quick-actions-platform-interface"
+    source: git
     version: "1.0.5"
   sky_engine:
     dependency: transitive
