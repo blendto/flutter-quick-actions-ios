@@ -53,16 +53,20 @@ struct ShortcutItemMessage {
   var localizedTitle: String
   /// Name of native resource to be displayed as the icon for this item.
   var icon: String? = nil
+  /// Localized subtitle of the item.
+  var localizedSubtitle: String
 
   static func fromList(_ list: [Any?]) -> ShortcutItemMessage? {
     let type = list[0] as! String
     let localizedTitle = list[1] as! String
     let icon: String? = nilOrValue(list[2])
+    let localizedSubtitle = nilOrValue(list[3] as? String)
 
     return ShortcutItemMessage(
       type: type,
       localizedTitle: localizedTitle,
-      icon: icon
+      icon: icon,
+      localizedSubtitle: localizedSubtitle
     )
   }
   func toList() -> [Any?] {
@@ -70,6 +74,7 @@ struct ShortcutItemMessage {
       type,
       localizedTitle,
       icon,
+      localizedSubtitle
     ]
   }
 }

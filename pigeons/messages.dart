@@ -26,6 +26,9 @@ class ShortcutItemMessage {
 
   /// Name of native resource to be displayed as the icon for this item.
   String? icon;
+
+  /// Localized subtitle of the item.
+  String? subtitle;
 }
 
 @HostApi()
